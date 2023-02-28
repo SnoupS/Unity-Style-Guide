@@ -16,6 +16,7 @@ This article contains ideas for setting up a projects structure and a naming con
 
 ### Sections
 > 1.1 [Style](#style)
+
 > 1.2 [Important Terminology](#importantterminology)
 
 <a name="style"></a>
