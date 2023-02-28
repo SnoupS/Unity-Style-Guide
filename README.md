@@ -55,13 +55,14 @@ The directory structure style of a project should be considered law. Asset namin
 In this style, we will be using a structure that relies more on filtering and search abilities of the Project Window for those working with assets to find assets of a specific type instead of another common structure that groups asset types with folders.
 
 > Because we are using a prefix [naming convention](#asset-name-modifiers), using folders to contain assets of similar types such as `Meshes`, `Textures`, and `Materials` is a redundant practice as asset types are already both sorted by prefix as well as able to be filtered in the content browser.
+<a name="assets-folder-structure-preview"></a>
 <pre>
 Assets
     <a name="structure-sandbox">_Sandbox</a>
         DeveloperName
             Testing
             WIP
-    <a name="structure-top-level">ProjectName</a>
+    <a name="structure-project-specific">ProjectName</a>
             _Levels             // Scenes
                 Frontend
                 Act1
@@ -234,29 +235,29 @@ Exceptions:
 
 | Asset Type                    | Prefix    | Suffix    | Notes                            |
 | ----------------------------- | --------- | --------- | -------------------------------- |
-| Scene                         | *         |           | Should be in a folder called [Levels](#level-structure), e.g. `Levels/A4_C17_Parking_Garage.unity` |
+| Scene                         | *         |           | Should be in a folder called [Levels](#assets-folder-structure-preview), e.g. `Levels/A4_C17_Parking_Garage.unity` |
 | - Persistent                  |           | _P        |                                  |
 | - Audio                       |           | _Audio    |                                  |
-| > Lighting                    |           | _Lighting |                                  |
-| > Geometry                    |           | _Geo      |                                  |
-| > Gameplay                    |           | _Gameplay |                                  |
-| Script                        |           |           | Should be in a folder called [Scripts](#project-structure), e.g. `Scripts/PlayerMovement.cs` |
+| - Lighting                    |           | _Lighting |                                  |
+| - Geometry                    |           | _Geo      |                                  |
+| - Gameplay                    |           | _Gameplay |                                  |
+| Script                        |           |           | Should be in a folder called [Scripts](#assets-folder-structure-preview), e.g. `Scripts/PlayerMovement.cs` |
 | 3D-Model                      |           |           |                                  |
-| > Character                   | CH_       |           |                                  |
-| > Vehicle                     | VH_       |           |                                  |
-| > Weapon                      | WP_       |           |                                  |
-| > Static Mesh                 | SM_       |           |                                  |
-| > Skeletal Mesh               | SK_       |           |                                  |
+| - Character                   | CH_       |           |                                  |
+| - Vehicle                     | VH_       |           |                                  |
+| - Weapon                      | WP_       |           |                                  |
+| - Static Mesh                 | SM_       |           |                                  |
+| - Skeletal Mesh               | SK_       |           |                                  |
 | Texture                       | T_        |           |                                  |
-| > Diffuse/Albedo/Base Color   |           | _D        |                                  |
-| > Normal                      |           | _N        |                                  |
-| > Roughness                   |           | _R        |                                  |
-| > Alpha/Opacity               |           | _A        |                                  |
-| > Ambient Occlusion           |           | _AO       |                                  |
-| > Bump                        |           | _B        |                                  |
-| > Emissive                    |           | _E        |                                  |
-| > Mask                        |           | _M        |                                  |
-| > Specular                    |           | _S        |                                  |
+|   Diffuse/Albedo/Base Color   |           | _D        |                                  |
+| - Normal                      |           | _N        |                                  |
+| - Roughness                   |           | _R        |                                  |
+| - Alpha/Opacity               |           | _A        |                                  |
+| - Ambient Occlusion           |           | _AO       |                                  |
+| - Bump                        |           | _B        |                                  |
+| - Emissive                    |           | _E        |                                  |
+| - Mask                        |           | _M        |                                  |
+| - Specular                    |           | _S        |                                  |
 | Material                      | M_        |           |                                  |
 | Shader                        | SH_       |           |                                  |
 | Particle System               | PS_       |           |                                  |
