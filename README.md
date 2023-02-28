@@ -5,24 +5,17 @@ This article contains ideas for setting up a projects structure and a naming con
 <a name="toc"></a>
 ## Table of Contents
 
-1. [Introduction](#introduction)
-    1.1 [Important Terminology](importantterminology)
-2. [Unity Setup](#unity-setup)
-   2.1 [Layout](#layout)
-   2.2 [Script Editor](#script-editor)
-3. [Project Structure](#project-structure)
-   3.1 [Assets Folder Structure](#assets-folder-structure)
-   3.2 [Scene Structure](#scene-structure)
-4. [Scripts](#scripts)
-   4.1 [Class Structure](#class-structure)
-   4.2 [Variables](#variables)
-   4.3 [Functions](#functions)
-5. [Asset Naming Conventions](#asset-naming-conventions)
-   5.1 [Rules](#rules)
-   5.2 [Asset Name Modifiers](#asset-name-modifiers)
+> 1. [Introduction](#introduction)
+> 2. [Unity Setup](#unity-setup)
+> 3. [Project Structure](#project-structure)
+> 4. [Scripts](#scripts)
+> 5. [Asset Naming Conventions](#asset-naming-conventions)
 
 <a name="introduction"></a>
 ## 1. Introduction
+
+### Sections
+> 1.1 [Important Terminology](importantterminology)
 
 > ##### *Arguments over style are pointless. There should be a style guide, and you should follow it.*
 > [_Rebecca Murphey_](https://rmurphey.com)
@@ -61,7 +54,11 @@ There are a few different ways you can name things. Here are some common casing 
 
 <a name="unity-setup"></a>
 ## 2. Unity Setup
-XXX
+
+### Sections
+> 2.1 [Layout](#layout)
+
+> 2.2 [Script Editor](#script-editor)
 
 <a name="layout"></a>
 ### 2.1 Layout
@@ -75,6 +72,12 @@ XXX
 
 <a name="project-structure"></a>
 ## 3. Project Structure
+
+### Sections
+> 3.1 [Assets Folder Structure](#assets-folder-structure)
+
+> 3.2 [Scene Structure](#scene-structure)
+
 The directory structure style of a project should be considered law. Asset naming conventions and content directory structure go hand in hand, and a violation of either causes unneeded chaos.
 
 In this style, we will be using a structure that relies more on filtering and search abilities of the Project Window for those working with assets to find assets of a specific type instead of another common structure that groups asset types with folders.
@@ -140,6 +143,13 @@ SceneName
 <a name="scripts"></a>
 ## 4. Scripts
 
+### Sections
+> 4.1 [Class Structure](#class-structure)
+
+> 4.2 [Variables](#variables)
+
+> 4.3 [Functions](#functions)
+
 This section will focus on C# classes and their internals. When possible, style rules conform to Microsoft's C# standard.
 
 <a name="class-structure"></a>
@@ -175,6 +185,12 @@ XXX
 
 <a name="asset-naming-conventions"></a>
 ## 5. Asset Naming Conventions
+
+### Sections
+> 5.1 [Rules](#rules)
+
+> 5.2 [Asset Name Modifiers](#asset-name-modifiers)
+
 Naming conventions should be treated as law. A project that conforms to a naming convention is able to have its assets managed, searched, parsed, and maintained with incredible ease.
 
 **All asset names use [PascalCase](#terms-cases)**
