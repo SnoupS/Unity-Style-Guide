@@ -5,19 +5,16 @@ This article contains ideas for setting up a projects structure and a naming con
 <a name="toc"></a>
 ## Table of Contents
 
-> 1. [Introduction](#introduction)
-> 2. [Unity Setup](#unity-setup)
-> 3. [Project Structure](#project-structure)
-> 4. [Scripts](#scripts)
-> 5. [Asset Naming Conventions](#asset-naming-conventions)
+1. [Introduction](#introduction)
+   - 1.1 [Style](#style)
+   - 1.2 [Important Terminology](#importantterminology)
+2. [Unity Setup](#unity-setup)
+3. [Project Structure](#project-structure)
+4. [Scripts](#scripts)
+5. [Asset Naming Conventions](#asset-naming-conventions)
 
 <a name="introduction"></a>
 ## 1. Introduction
-
-### Sections
-> 1.1 [Style](#style)
-
-> 1.2 [Important Terminology](#importantterminology)
 
 <a name="style"></a>
 ### 1.2 Style
