@@ -235,8 +235,8 @@ Exceptions:
 | Asset Type                    | Prefix    | Suffix    | Notes                            |
 | ----------------------------- | --------- | --------- | -------------------------------- |
 | Scene                         | *         |           | Should be in a folder called [Levels](#level-structure), e.g. `Levels/A4_C17_Parking_Garage.unity` |
-| > Persistent                  |           | _P        |                                  |
-| > Audio                       |           | _Audio    |                                  |
+| - Persistent                  |           | _P        |                                  |
+| - Audio                       |           | _Audio    |                                  |
 | > Lighting                    |           | _Lighting |                                  |
 | > Geometry                    |           | _Geo      |                                  |
 | > Gameplay                    |           | _Gameplay |                                  |
