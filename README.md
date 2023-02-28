@@ -170,6 +170,9 @@ SceneName
 
 <a name="class-structure"></a>
 ### 3.1 Class Structure
+
+C:\Program Files\Unity\Hub\Editor\2021.3.13f1\Editor\Data\Resources\ScriptTemplates
+
 <pre>
 Class members should be alphabetized, and grouped into sections:
 * Constant Fields
