@@ -2,7 +2,7 @@
 
 This article contains rules regarding project structure and naming conventions for game developement in Unity.
 
-SHORTCUTS:
+#### Shortcuts
 - [Assets Folder Structure](#assets-folder-structure)
 - [Scene Structure](#scene-structure)
 - [C# Class Structure](#class-structure)
@@ -59,6 +59,8 @@ In this style, we will be using a structure that relies more on filtering and se
 Assets
     <a name="structure-sandbox">_Sandbox</a>
         DeveloperName
+            Testing
+            WIP
     <a name="structure-top-level">ProjectName</a>
             _Levels             // Scenes
                 Frontend
@@ -72,8 +74,8 @@ Assets
                 Equipment
                 Items
                 Vehicles
-            MaterialLibrary     // Reusable/Layered/Master Materials, Shaders, Generic Noise Textures, etc.
-                Materials
+            MaterialLibrary     // (Debug) Materials, Shaders, Generic Noise Textures, etc.
+                Debug
                 Shaders
                 Utility
             Scripts             // C# Scripts
@@ -93,12 +95,45 @@ Assets
                     Fonts
 </pre>
 
-#### Assets/_Sandbox/DeveloperName/
-- WIP assets
-- Testing
+#### 2.1.1 Top Level Folder For Project Specific Assets
 
-#### Assets/ProjectName/_Levels/
-- 
+All of a project's assets should exist in a folder named after the project. For example, if your project is named 'Generic Shooter', _all_ of it's content should exist in `Assets/GenericShooter`.
+
+> The `Sandbox` folder provides developers separate areas for WIP assets and local testing. Your project does not rely on these assets and so they are not project specific.
+
+> `Third-party Assets` will import directly into the Assets folder. Moving them around can break their functionality and the top level folder for project specific assets ensures nothing gets overwritten, which is why third-party asset imports can be left where they are.
+
+#### 2.1.2 Folder Names
+
+- Always Use PascalCase
+- Never Use Spaces
+- Never Use Unicode Characters And Other Symbols
+- Start name with "_" to move them to the top of the hierarchy
+
+#### 2.1.3 All Scene Files Go In A Folder Called Levels
+
+Level files are incredibly special and it is common for every project to have its own map naming system, especially if they work with sub-levels or streaming levels. No matter what system of map organization is in place for the specific project, all levels should belong in a dedicated levels folder.
+
+Being able to tell someone to open a specific map without having to explain where it is is a great time saver and general 'quality of life' improvement. It is common for levels to be within sub-folders, such as `Levels/Campaign1/` or `Levels/Arenas`, but the most important thing here is that they all exist within `Assets/ProjectNameName/Levels`.
+
+This also simplifies the job of cooking for engineers. Wrangling levels for a build process can be extremely frustrating if they have to dig through arbitrary folders for them. If a team's levels are all in one place, it is much harder to accidentally not cook a map in a build. It also simplifies lighting build scripts as well QA processes.
+
+### 2.1.4 Very Large Asset Sets Get Their Own Folder Layout
+
+There are certain asset types that have a huge volume of related files where each asset has a unique purpose. The two most common are Animation and Audio assets. If you find yourself having 15+ of these assets that belong together, they should be together.
+
+For example, animations that are shared across multiple characters should lay in `Characters/Common/Animations` and may have sub-folders such as `Locomotion` or `Cinematic`.
+
+### 2.1.5 MaterialLibrary
+
+If your project makes use of master materials, layered materials, or any form of reusable materials or textures that do not belong to any subset of assets, these assets should be located in `Assets/ProjectName/MaterialLibrary`.
+
+This way all 'global' materials have a place to live and are easily located.
+
+> This also makes it incredibly easy to enforce a 'use material instances only' policy within a project. If all artists and assets should be using material instances, then the only regular material assets that should exist are within this folder. You can easily verify this by searching for base materials in any folder that isn't the `MaterialLibrary`.
+The `MaterialLibrary` doesn't have to consist of purely materials. Shared utility textures, material functions, and other things of this nature should be stored here as well within folders that designate their intended purpose. For example, generic noise textures should be located in `MaterialLibrary/Utility`.
+
+Any testing or debug materials should be within `MaterialLibrary/Debug`. This allows debug materials to be easily stripped from a project before shipping and makes it incredibly apparent if production assets are using them if reference errors are shown.
 
 <a name="scene-structure"></a>
 ### 2.2 Scene Structure
@@ -121,17 +156,17 @@ SceneName
 **[Back to Top](#table-of-contents)**
 
 <a name="scripts"></a>
-## 2. Scripts
+## 3. Scripts
 
 ### Sections
-> 2.1 [Class Structure](#class-structure)
+> 3.1 [Class Structure](#class-structure)
 
-> 2.2 [Variables](#variables)
+> 3.2 [Variables](#variables)
 
-> 2.3 [Functions](#functions)
+> 3.3 [Functions](#functions)
 
 <a name="class-structure"></a>
-### 2.1 Class Structure
+### 3.1 Class Structure
 <pre>
 Class members should be alphabetized, and grouped into sections:
 * Constant Fields
@@ -153,29 +188,29 @@ Within each of these groups order by access:
 </pre>
 
 <a name="variables"></a>
-### 2.2 Variables
+### 3.2 Variables
 XXX
 
 <a name="functions"></a>
-### 2.3 Functions
+### 3.3 Functions
 XXX
 
 **[Back to Top](#table-of-contents)**
 
 <a name="asset-naming-conventions"></a>
-## 3. Asset Naming Conventions
+## 4. Asset Naming Conventions
 
 ### Sections
-> 3.1 [Rules](#rules)
+> 4.1 [Rules](#rules)
 
-> 3.2 [Asset Name Modifiers](#asset-name-modifiers)
+> 4.2 [Asset Name Modifiers](#asset-name-modifiers)
 
 **All asset names use PascalCase**
 
 **All asset names should follow the standard of `Prefix_BaseAssetName_Variant_Suffix`.**
 
 <a name="rules"></a>
-### 3.1 Rules
+### 4.1 Rules
 
 All assets should have a _Base Asset Name_. It represents a logical grouping of related assets.
 
@@ -193,7 +228,7 @@ Exceptions:
     * Unlike other asset types, scripts are all stored in the same folder. Additionally, the contained C# Class must have the same name as the script's asset name. Therefore, scripts should only be named with a `BaseAssetName`.
 
 <a name="asset-name-modifiers"></a>
-### 3.2 Asset Name Modifiers
+### 4.2 Asset Name Modifiers
 
 | Asset Type                    | Prefix    | Suffix    | Notes                            |
 | ----------------------------- | --------- | --------- | -------------------------------- |
