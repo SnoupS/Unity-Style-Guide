@@ -236,28 +236,28 @@ Exceptions:
 | Asset Type                    | Prefix    | Suffix    | Notes                            |
 | ----------------------------- | --------- | --------- | -------------------------------- |
 | Scene                         | *         |           | Should be in a folder called [Levels](#assets-folder-structure-preview), e.g. `Levels/A4_C17_Parking_Garage.unity` |
-| \ Persistent                 |           | _P        |                                  |
-| \ Audio                      |           | _Audio    |                                  |
-| \ Lighting                   |           | _Lighting |                                  |
-| \ Geometry                   |           | _Geo      |                                  |
-| \ Gameplay                   |           | _Gameplay |                                  |
+| > Persistent                  |           | _P        |                                  |
+| > Audio                       |           | _Audio    |                                  |
+| > Lighting                    |           | _Lighting |                                  |
+| > Geometry                    |           | _Geo      |                                  |
+| > Gameplay                    |           | _Gameplay |                                  |
 | Script                        |           |           | Should be in a folder called [Scripts](#assets-folder-structure-preview), e.g. `Scripts/PlayerMovement.cs` |
 | 3D-Model                      |           |           |                                  |
-| -> Character                  | CH_       |           |                                  |
-| -> Vehicle                    | VH_       |           |                                  |
-| -> Weapon                     | WP_       |           |                                  |
-| -> Static Mesh                | SM_       |           |                                  |
-| -> Skeletal Mesh              | SK_       |           |                                  |
+| > Character                   | CH_       |           |                                  |
+| > Vehicle                     | VH_       |           |                                  |
+| > Weapon                      | WP_       |           |                                  |
+| > Static Mesh                 | SM_       |           |                                  |
+| > Skeletal Mesh               | SK_       |           |                                  |
 | Texture                       | T_        |           |                                  |
-| -> Diffuse/Albedo/Base Color  |           | _D        |                                  |
-| -> Normal                     |           | _N        |                                  |
-| -> Roughness                  |           | _R        |                                  |
-| -> Alpha/Opacity              |           | _A        |                                  |
-| -> Ambient Occlusion          |           | _AO       |                                  |
-| -> Bump                       |           | _B        |                                  |
-| -> Emissive                   |           | _E        |                                  |
-| -> Mask                       |           | _M        |                                  |
-| -> Specular                   |           | _S        |                                  |
+| > Diffuse/Albedo/Base Color   |           | _D        |                                  |
+| > Normal                      |           | _N        |                                  |
+| > Roughness                   |           | _R        |                                  |
+| > Alpha/Opacity               |           | _A        |                                  |
+| > Ambient Occlusion           |           | _AO       |                                  |
+| > Bump                        |           | _B        |                                  |
+| > Emissive                    |           | _E        |                                  |
+| > Mask                        |           | _M        |                                  |
+| > Specular                    |           | _S        |                                  |
 | Material                      | M_        |           |                                  |
 | Shader                        | SH_       |           |                                  |
 | Particle System               | PS_       |           |                                  |
