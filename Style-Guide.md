@@ -97,10 +97,10 @@ Assets
 
 #### 2.1.1 Folder Names
 
-- Always Use PascalCase
-- Never Use Spaces
-- Never Use Unicode Characters And Other Symbols
-- Start name with "_" to move them to the top of the hierarchy
+- Always use PascalCase
+- Never use Spaces
+- Never use Unicode Characters And Other Symbols
+- Start folder name with "_" to move them to the top of the hierarchy
 
 #### 2.1.2 Top Level Folder For Project Specific Assets
 
