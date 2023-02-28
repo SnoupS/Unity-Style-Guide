@@ -6,7 +6,7 @@ This article contains ideas for setting up a projects structure and a naming con
 ## Table of Contents
 
 1. [Introduction](#introduction)
-   1.1 [Important Terminology](importantterminology)
+    1.1 [Important Terminology](importantterminology)
 2. [Unity Setup](#unity-setup)
    2.1 [Layout](#layout)
    2.2 [Script Editor](#script-editor)
