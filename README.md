@@ -6,20 +6,20 @@ This article contains ideas for setting up a projects structure and a naming con
 ## Table of Contents
 
 1. [Introduction](#introduction)
-    1.1 [Important Terminology](importantterminology)
+   1.1 [Important Terminology](importantterminology)
 2. [Unity Setup](#unity-setup)
-    2.1 [Layout](#layout)
-    2.2 [Script Editor](#script-editor)
+   2.1 [Layout](#layout)
+   2.2 [Script Editor](#script-editor)
 3. [Project Structure](#project-structure)
-    3.1 [Assets Folder Structure](#assets-folder-structure)
-    3.2 [Scene Structure](#scene-structure)
+   3.1 [Assets Folder Structure](#assets-folder-structure)
+   3.2 [Scene Structure](#scene-structure)
 4. [Scripts](#scripts)
-    4.1 [Class Structure](#class-structure)
-    4.2 [Variables](#variables)
-    4.3 [Functions](#functions)
+   4.1 [Class Structure](#class-structure)
+   4.2 [Variables](#variables)
+   4.3 [Functions](#functions)
 5. [Asset Naming Conventions](#asset-naming-conventions)
-    5.1 [Rules](#rules)
-    5.2 [Asset Name Modifiers](#asset-name-modifiers)
+   5.1 [Rules](#rules)
+   5.2 [Asset Name Modifiers](#asset-name-modifiers)
 
 <a name="introduction"></a>
 ## 1. Introduction
