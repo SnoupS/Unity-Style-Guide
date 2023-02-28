@@ -15,7 +15,11 @@ This article contains ideas for setting up a projects structure and a naming con
 ## 1. Introduction
 
 ### Sections
-> 1.1 [Important Terminology](importantterminology)
+> 1.1 [Style](#style)
+> 1.2 [Important Terminology](#importantterminology)
+
+<a name="style"></a>
+### 1.2 Style
 
 > ##### *Arguments over style are pointless. There should be a style guide, and you should follow it.*
 > [_Rebecca Murphey_](https://rmurphey.com)
@@ -33,7 +37,7 @@ When working within a team or discussing within a community, it is far easier to
 If you are helping someone who's work conforms to a different but consistent and sane style guide, you should be able to adapt to it. If they do not conform to any style guide, please direct them here.
 
 <a name="importantterminology"></a>
-### 1.1 Important Terminology
+### 1.2 Important Terminology
 
 <a name="terms-cases"></a>
 #### Cases
