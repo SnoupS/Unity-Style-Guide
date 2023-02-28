@@ -6,9 +6,8 @@ This article contains ideas for setting up a projects structure and a naming con
 ## Table of Contents
 
 > 1. [Introduction](#introduction)
->
-> ...1.1 [Style](#style)
-> ...1.2 [Important Terminology](#importantterminology)
+>    - [Style](#style)
+>    - [Important Terminology](#importantterminology)
 > 2. [Project Structure](#project-structure)
 >    - [Assets Folder Structure](#assets-folder-structure)
 >    - [Scene Structure](#scene-structure)
@@ -23,12 +22,11 @@ This article contains ideas for setting up a projects structure and a naming con
 <a name="introduction"></a>
 ## 1. Introduction
 
-#### Sections
-> 1.1 [Style](#style)
-> 1.2 [Important Terminology](#importantterminology)
+> - [Style](#style)
+> - [Important Terminology](#importantterminology)
 
 <a name="style"></a>
-### 1.2 Style
+### Style
 
 > ##### *Arguments over style are pointless. There should be a style guide, and you should follow it.*
 > [_Rebecca Murphey_](https://rmurphey.com)
@@ -46,7 +44,7 @@ When working within a team or discussing within a community, it is far easier to
 If you are helping someone who's work conforms to a different but consistent and sane style guide, you should be able to adapt to it. If they do not conform to any style guide, please direct them here.
 
 <a name="importantterminology"></a>
-### 1.2 Important Terminology
+### Important Terminology
 
 <a name="terms-cases"></a>
 #### Cases
@@ -68,9 +66,8 @@ There are a few different ways you can name things. Here are some common casing 
 <a name="project-structure"></a>
 ## 2. Project Structure
 
-#### Sections
-> 2.1 [Assets Folder Structure](#assets-folder-structure)
-> 2.2 [Scene Structure](#scene-structure)
+> - [Assets Folder Structure](#assets-folder-structure)
+> - [Scene Structure](#scene-structure)
 
 The directory structure style of a project should be considered law. Asset naming conventions and content directory structure go hand in hand, and a violation of either causes unneeded chaos.
 
@@ -79,7 +76,7 @@ In this style, we will be using a structure that relies more on filtering and se
 > Using a prefix [naming convention](#asset-name-modifiers), using folders to contain assets of similar types such as `Meshes`, `Textures`, and `Materials` is a redundant practice as asset types are already both sorted by prefix as well as able to be filtered in the content browser.
 
 <a name="assets-folder-structure"></a>
-### 2.1 Assets Folder Structure
+### Assets Folder Structure
 <pre>
 Assets
     <a name="structure-sandbox">_Sandbox</a>
@@ -115,7 +112,7 @@ Assets
 </pre>
 
 <a name="scene-structure"></a>
-### 2.2 Scene Structure
+### Scene Structure
 <pre>
 SceneName
     Debug
@@ -137,15 +134,14 @@ SceneName
 <a name="scripts"></a>
 ## 3. Scripts
 
-### Sections
-> 3.1 [Class Structure](#class-structure)
-> 3.2 [Variables](#variables)
-> 3.3 [Functions](#functions)
+> - [Class Structure](#class-structure)
+> - [Variables](#variables)
+> - [Functions](#functions)
 
 This section will focus on C# classes and their internals. When possible, style rules conform to Microsoft's C# standard.
 
 <a name="class-structure"></a>
-### 3.1 Class Structure
+### Class Structure
 Class members should be alphabetized, and grouped into sections:
 * Constant Fields
 * Static Fields
@@ -166,11 +162,11 @@ Within each of these groups order by access:
 </pre>
 
 <a name="variables"></a>
-### 3.2 Variables
+### Variables
 XXX
 
 <a name="functions"></a>
-### 3.3 Functions
+### Functions
 XXX
 
 **[Back to Top](#table-of-contents)**
@@ -178,9 +174,8 @@ XXX
 <a name="asset-naming-conventions"></a>
 ## 4. Asset Naming Conventions
 
-### Sections
-> 4.1 [Rules](#rules)
-> 4.2 [Asset Name Modifiers](#asset-name-modifiers)
+> - [Rules](#rules)
+> - [Asset Name Modifiers](#asset-name-modifiers)
 
 Naming conventions should be treated as law. A project that conforms to a naming convention is able to have its assets managed, searched, parsed, and maintained with incredible ease.
 
@@ -189,7 +184,7 @@ Naming conventions should be treated as law. A project that conforms to a naming
 **All asset names should follow the standard of `Prefix_BaseAssetName_Variant_Suffix`.**
 
 <a name="rules"></a>
-### 4.1 Rules
+### Rules
 
 All assets should have a _Base Asset Name_. A Base Asset Name represents a logical grouping of related assets. Keeping the pattern `Prefix_BaseAssetName_Variant_Suffix` in mind and using common sense is generally enough to warrant good asset names. Here are some detailed rules regarding each element:
 * `Prefix` and `Suffix` are to be determined by the asset type through the following [Asset Name Modifier](#asset-name-modifiers) tables.
@@ -205,7 +200,7 @@ Exceptions:
     * Unlike other asset types, scripts are all stored in the same folder. Additionally, the contained C# Class must have the same name as the script's asset name. Therefore, scripts should only be named with a `BaseAssetName`.
 
 <a name="asset-name-modifiers"></a>
-### 4.2 Asset Name Modifiers
+### Asset Name Modifiers
 
 | Asset Type                    | Prefix    | Suffix    | Notes                            |
 | ----------------------------- | --------- | --------- | -------------------------------- |
