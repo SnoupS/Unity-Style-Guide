@@ -236,11 +236,11 @@ Exceptions:
 | Asset Type                    | Prefix    | Suffix    | Notes                            |
 | ----------------------------- | --------- | --------- | -------------------------------- |
 | Scene                         | *         |           | Should be in a folder called [Levels](#assets-folder-structure-preview), e.g. `Levels/A4_C17_Parking_Garage.unity` |
-| -> Persistent                 |           | _P        |                                  |
-| -> Audio                      |           | _Audio    |                                  |
-| -> Lighting                   |           | _Lighting |                                  |
-| -> Geometry                   |           | _Geo      |                                  |
-| -> Gameplay                   |           | _Gameplay |                                  |
+| \ Persistent                 |           | _P        |                                  |
+| \ Audio                      |           | _Audio    |                                  |
+| \ Lighting                   |           | _Lighting |                                  |
+| \ Geometry                   |           | _Geo      |                                  |
+| \ Gameplay                   |           | _Gameplay |                                  |
 | Script                        |           |           | Should be in a folder called [Scripts](#assets-folder-structure-preview), e.g. `Scripts/PlayerMovement.cs` |
 | 3D-Model                      |           |           |                                  |
 | -> Character                  | CH_       |           |                                  |
