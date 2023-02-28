@@ -95,20 +95,20 @@ Assets
                     Fonts
 </pre>
 
-#### 2.1.1 Top Level Folder For Project Specific Assets
+#### 2.1.1 Folder Names
+
+- Always Use PascalCase
+- Never Use Spaces
+- Never Use Unicode Characters And Other Symbols
+- Start name with "_" to move them to the top of the hierarchy
+
+#### 2.1.2 Top Level Folder For Project Specific Assets
 
 All of a project's assets should exist in a folder named after the project. For example, if your project is named 'Generic Shooter', _all_ of it's content should exist in `Assets/GenericShooter`.
 
 > The `Sandbox` folder provides developers separate areas for WIP assets and local testing. Your project does not rely on these assets and so they are not project specific.
 
 > `Third-party Assets` will import directly into the Assets folder. Moving them around can break their functionality and the top level folder for project specific assets ensures nothing gets overwritten, which is why third-party asset imports can be left where they are.
-
-#### 2.1.2 Folder Names
-
-- Always Use PascalCase
-- Never Use Spaces
-- Never Use Unicode Characters And Other Symbols
-- Start name with "_" to move them to the top of the hierarchy
 
 #### 2.1.3 All Scene Files Go In A Folder Called Levels
 
