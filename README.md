@@ -5,25 +5,25 @@ This article contains ideas for setting up a projects structure and a naming con
 <a name="toc"></a>
 ## Table of Contents
 
-> 1. [Introduction](#introduction)
+> - [Introduction](#introduction)
 >    - [Style](#style)
 >    - [Important Terminology](#importantterminology)
-> 2. [Project Structure](#project-structure)
+> - [Project Structure](#project-structure)
 >    - [Assets Folder Structure](#assets-folder-structure)
 >    - [Scene Structure](#scene-structure)
-> 3. [Scripts](#scripts)
+> - [Scripts](#scripts)
 >    - [Class Structure](#class-structure)
 >    - [Variables](#variables)
 >    - [Functions](#functions)
-> 4. [Asset Naming Conventions](#asset-naming-conventions)
+> - [Asset Naming Conventions](#asset-naming-conventions)
 >    - [Rules](#rules)
 >    - [Asset Name Modifiers](#asset-name-modifiers)
 
 <a name="introduction"></a>
-## 1. Introduction
+## Introduction
 
-> - [Style](#style)
-> - [Important Terminology](#importantterminology)
+> [Style](#style)
+> [Important Terminology](#importantterminology)
 
 <a name="style"></a>
 ### Style
@@ -64,10 +64,10 @@ There are a few different ways you can name things. Here are some common casing 
 **[Back to Top](#table-of-contents)**
 
 <a name="project-structure"></a>
-## 2. Project Structure
+## Project Structure
 
-> - [Assets Folder Structure](#assets-folder-structure)
-> - [Scene Structure](#scene-structure)
+> [Assets Folder Structure](#assets-folder-structure)
+> [Scene Structure](#scene-structure)
 
 The directory structure style of a project should be considered law. Asset naming conventions and content directory structure go hand in hand, and a violation of either causes unneeded chaos.
 
@@ -132,11 +132,11 @@ SceneName
 **[Back to Top](#table-of-contents)**
 
 <a name="scripts"></a>
-## 3. Scripts
+## Scripts
 
-> - [Class Structure](#class-structure)
-> - [Variables](#variables)
-> - [Functions](#functions)
+> [Class Structure](#class-structure)
+> [Variables](#variables)
+> [Functions](#functions)
 
 This section will focus on C# classes and their internals. When possible, style rules conform to Microsoft's C# standard.
 
@@ -172,10 +172,10 @@ XXX
 **[Back to Top](#table-of-contents)**
 
 <a name="asset-naming-conventions"></a>
-## 4. Asset Naming Conventions
+## Asset Naming Conventions
 
-> - [Rules](#rules)
-> - [Asset Name Modifiers](#asset-name-modifiers)
+> [Rules](#rules)
+> [Asset Name Modifiers](#asset-name-modifiers)
 
 Naming conventions should be treated as law. A project that conforms to a naming convention is able to have its assets managed, searched, parsed, and maintained with incredible ease.
 
