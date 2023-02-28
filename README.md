@@ -12,52 +12,12 @@ This article contains ideas for setting up a projects structure and a naming con
 
 <a name="introduction"></a>
 ## 1. Introduction
-
-> 1.1 [Style](#style)
-
-> 1.2 [Important Terminology](#importantterminology)
-
-<a name="style"></a>
-### 1.1 Style
-
-> ##### *Arguments over style are pointless. There should be a style guide, and you should follow it.*
-> [_Rebecca Murphey_](https://rmurphey.com)
-
-#### All structure, assets, and code in any project should look like a single person created it, no matter how many people contributed.
-Moving from one project to another should not cause a re-learning of style and structure. Conforming to a style guide removes unneeded guesswork and ambiguities.
-
-It also allows for more productive creation and maintenance as one does not need to think about style, simply follow instructions. This style guide is written with best practices in mind, meaning that by following this style guide you will also minimize hard to track issues.
-
-#### Friends do not let friends have bad style.
-If you see someone working either against a style guide or no style guide, try to correct them.
-
-When working within a team or discussing within a community, it is far easier to help and to ask for help when people are consistent. Nobody likes to help untangle someone's spaghetti code or deal with assets with names they can't understand.
-
-If you are helping someone who's work conforms to a different but consistent and sane style guide, you should be able to adapt to it. If they do not conform to any style guide, please direct them here.
-
-<a name="importantterminology"></a>
-### 1.2 Important Terminology
-
-<a name="terms-cases"></a>
-#### Cases
-There are a few different ways you can name things. Here are some common casing types:
-
-> ##### PascalCase
-> Capitalize every word and remove all spaces, e.g. `DesertEagle`, `StyleGuide`, `ASeriesOfWords`.
-> 
-> ##### camelCase
-> The first letter is always lowercase but every following word starts with uppercase, e.g. `desertEagle`, `styleGuide`, `aSeriesOfWords`.
->  ##### lowercase
-> All letters are lowercase, e.g. `deserteagle`, 
->
-> ##### Snake_case
-> Words can arbitrarily start upper or lowercase but words are separated by an underscore, e.g. `desert_Eagle`, `Style_Guide`, `a_Series_of_Words`.
-
-**[Back to Top](#table-of-contents)**
+XXX
 
 <a name="project-structure"></a>
 ## 2. Project Structure
 
+### Sections
 > 2.1 [Assets Folder Structure](#assets-folder-structure)
 
 > 2.2 [Scene Structure](#scene-structure)
@@ -127,6 +87,7 @@ SceneName
 <a name="scripts"></a>
 ## 3. Scripts
 
+### Sections
 > 3.1 [Class Structure](#class-structure)
 
 > 3.2 [Variables](#variables)
@@ -169,13 +130,14 @@ XXX
 <a name="asset-naming-conventions"></a>
 ## 4. Asset Naming Conventions
 
+### Sections
 > 4.1 [Rules](#rules)
 
 > 4.2 [Asset Name Modifiers](#asset-name-modifiers)
 
 Naming conventions should be treated as law. A project that conforms to a naming convention is able to have its assets managed, searched, parsed, and maintained with incredible ease.
 
-**All asset names use [PascalCase](#terms-cases)**
+**All asset names use PascalCase**
 
 **All asset names should follow the standard of `Prefix_BaseAssetName_Variant_Suffix`.**
 
