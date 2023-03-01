@@ -1,4 +1,4 @@
-# Style Guide
+# Unity Style-Guide
 
 This article contains rules regarding project structure and naming conventions for game developement in Unity.
 
