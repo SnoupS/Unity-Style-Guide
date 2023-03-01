@@ -86,7 +86,7 @@ Assets
                 Gameplay
                     Player
                 Tools
-            Settings            // Render Pipeline Assets, Input System Assets, etc.
+            Settings            // Input System Assets, Render Pipeline Assets, etc.
                 Input
                     Controls
                 RenderPipeline
@@ -164,42 +164,189 @@ SceneName
 ### Sections
 > 3.1 [Class Structure](#class-structure)
 
-> 3.2 [Variables](#variables)
+> 3.2 [Naming Conventions](#script-naming-conventions)
 
-> 3.3 [Functions](#functions)
+> 3.3 [Coding Style](#coding-style)
+
+> 3.4 [Script Template](#script-template)
 
 <a name="class-structure"></a>
 ### 3.1 Class Structure
 
-C:\Program Files\Unity\Hub\Editor\2021.3.13f1\Editor\Data\Resources\ScriptTemplates
+Class members should be ordered alphabetically, and grouped into sections:
+1. Constant Fields
+2. Static Fields
+3. Fields
+4. Constructors
+5. Properties
+6. Events / Delegates
+7. LifeCycle Methods (Awake, OnEnable, OnDisable, OnDestroy)
+8. Public Methods
+9. Private Methods
+10. Nested types
 
+Within each of these groups, class members should be order by access:
+1. public
+2. internal
+3. protected
+4. private
+
+<a name="script-naming-conventions"></a>
+### 3.2 Naming Conventions
+
+The naming of class members should follow the following rules:
+- Constant Fields: UPPERCASE_VARIABLE
+- Static Fields: camelCase
+- Fields: camelCase
+- Constructors: PascalCase
+- Properties: PascalCase
+- Events / Delegates: PascalCase
+- Methods: PascalCase
+- Nested types: PascalCase
+
+<a name="coding-style"></a>
+### 3.3 Coding Style
+
+#### 3.3.1 Curly Brackets
+
+A consistent approach for the placing of curly brackets / braces should be adopted. The choice is mostly subjective, but in this Style-Guide, the following format is used:
 <pre>
-Class members should be alphabetized, and grouped into sections:
-* Constant Fields
-* Static Fields
-* Fields
-* Constructors
-* Properties
-* Events / Delegates
-* LifeCycle Methods (Awake, OnEnable, OnDisable, OnDestroy)
-* Public Methods
-* Private Methods
-* Nested types
-
-Within each of these groups order by access:
-* public
-* internal
-* protected
-* private
+private void Update()
+{
+    // ...
+}
 </pre>
 
-<a name="variables"></a>
-### 3.2 Variables
-XXX
+Despite scripts becoming more compact when placing curly brackets on the same line and not on a new one, there are other compelling reasons for using the format above:
+1. It is in line with [Microsoft's C# Coding Conventions](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions) and Unity's standard
+2. The otherwise empty line breaks with the curly brackets provide a symmetrical framing of the code inside, which - especially for longer scripts - can provide a better overview of the code's structure
+3. For functions with many different parameters, placing the curly brackets on a new line helps destinguish function parameters from function code. See the two examples below:
+<pre>
+public void MyFunction(
+    Vector2 parameterOne,
+    Vector2 parameterTwo,
+    int parameterThree,
+    int parameterFour) {
+    int localOne,
+    int localTwo
+}
+</pre>
 
-<a name="functions"></a>
-### 3.3 Functions
-XXX
+<pre>
+public void MyFunction(
+    Vector2 parameterOne,
+    Vector2 parameterTwo,
+    int parameterThree,
+    int parameterFour)
+{
+    int localOne,
+    int localTwo
+}
+</pre>
+
+#### 3.3.2 Summaries
+
+All classes and functions that have an access modifier of `public` should have a summary.
+
+<pre>
+/// <summary>  
+/// Brief summary of what the class does
+/// </summary>
+public class MyClass : MonoBehaviour
+{
+    private void Start()
+    {
+        // ...
+    }
+
+    /// <summary>  
+    /// Brief summary of what the function does
+    /// </summary>
+    public void MyFunction()
+    {
+        // ...
+    }
+}
+</pre>
+
+#### 3.3.3 Serialization
+
+Prefer to use the attribute [SerializeField] instead of making a variable public.
+
+When serializing fields, make use of Attributes to make editor interaction in the inspector easier to understand:
+- Always use `Header` to group different fields - common groups are "Config" and "Interactable"
+- Use `Tooltop` to add a short description of how changing this value affects the value of this script, if it is not immediately appearant from the variable name
+- Use `Range` to use a slider in the inspector and define a value range if the bounds of the variable are known
+
+Example:
+<pre>
+public class PlayerMovement : MonoBehaviour
+{
+    [Header("Config")]
+    [SerializeField] private Transform playerTransform;
+
+    [Header("Interactable")]
+    [Range(0.0f, 25.0f)]
+    [SerializeField] private float speed = 10.0f;
+    [Tooltip("Gets used up when running and has to recharge when empty. Higher values allow the player to run longer.")]
+    [Range(0.0f, 25.0f)]
+    [SerializeField] private float stamina = 10.0f;
+    
+    private void Start()
+    {
+        // ...
+    }
+}
+</pre>
+
+The following best practices should be considered when serializing data;
+- Aim to have Unity serialize the smallest possible set of data
+- Don't have Unity serialize duplicate data or cached data
+- Avoid nested, recursive structures where you reference other classes
+
+Fields that are serialized and thus show in the editor should
+
+#### 3.3.4 Comments
+
+The following rules should always be followed when adding comments:
+- Where ever possible, place comments above the code instead of beside it
+- The // (two slashes) style of comment tags should be used in most situations
+- Insert one space between the comment delimiter (//) and the comment text
+- Begin comment text with an uppercase letter
+- End comment text with a period
+
+<a name="script-template"></a>
+### 3.4 Script Template
+
+In order to improve the scripting workflow, the base template for new C# scripts can be customized. To do this, navigate to:
+
+> C:\Program Files\Unity\Hub\Editor\2021.3.13f1\Editor\Data\Resources\ScriptTemplates
+
+There, edit the `C# Script-NewBehaviourScript.cs`. In accordance with the [Coding Style](#coding-style) described above, the following template could be used as a bare-bones script setup:
+<pre>
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+#ROOTNAMESPACEBEGIN#
+/// <summary>  
+/// Brief summary of what the class does
+/// </summary>
+public class #SCRIPTNAME# : MonoBehaviour
+{
+    [Header("Config")]
+    [SerializeField]
+    
+    private void Start()
+    {
+    }
+
+    private void Update()
+    {
+    }
+}
+#ROOTNAMESPACEEND#
+</pre>
 
 **[Back to Top](#table-of-contents)**
 
