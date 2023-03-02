@@ -1,6 +1,6 @@
 # Unity Style-Guide
 
-This article contains rules regarding project structure and naming conventions for game developement in Unity.
+This article contains specific rules for game developement in Unity regarding project structure, asset names and scripts.
 
 #### Shortcuts
 - [Assets Folder Structure](#assets-folder-structure)
