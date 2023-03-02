@@ -185,7 +185,7 @@ Class members should be ordered alphabetically, and grouped into sections:
 9. Private Methods
 10. Nested types
 
-Within each of these groups, class members should be order by access:
+Within each of these groups, class members should be ordered by access:
 1. public
 2. internal
 3. protected
@@ -194,7 +194,7 @@ Within each of these groups, class members should be order by access:
 <a name="script-naming-conventions"></a>
 ### 3.2 Naming Conventions
 
-The naming of class members should follow the following rules:
+The naming of class members should follow the these rules:
 - Constant Fields: UPPERCASE_VARIABLE
 - Static Fields: camelCase
 - Fields: camelCase
@@ -221,6 +221,7 @@ Despite scripts becoming more compact when placing curly brackets on the same li
 1. It is in line with [Microsoft's C# Coding Conventions](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions) and Unity's standard
 2. The otherwise empty line breaks with the curly brackets provide a symmetrical framing of the code inside, which - especially for longer scripts - can provide a better overview of the code's structure
 3. For functions with many different parameters, placing the curly brackets on a new line helps destinguish function parameters from function code. See the two examples below:
+Bad Example:
 <pre>
 public void MyFunction(
     Vector2 parameterOne,
@@ -231,7 +232,7 @@ public void MyFunction(
     int localTwo
 }
 </pre>
-
+Good Example:
 <pre>
 public void MyFunction(
     Vector2 parameterOne,
@@ -248,7 +249,7 @@ public void MyFunction(
 
 All classes and functions that have an access modifier of `public` should have a summary.
 
-<pre>
+```
 /// <summary>  
 /// Brief summary of what the class does
 /// </summary>
@@ -267,7 +268,7 @@ public class MyClass : MonoBehaviour
         // ...
     }
 }
-</pre>
+```
 
 #### 3.3.3 Serialization
 
@@ -288,7 +289,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Interactable")]
     [Range(0.0f, 25.0f)]
     [SerializeField] private float speed = 10.0f;
-    [Tooltip("Gets used up when running and has to recharge when empty. Higher values allow the player to run longer.")]
+    [Tooltip("Determines the Player's stamina, which gets used up when running.")]
     [Range(0.0f, 25.0f)]
     [SerializeField] private float stamina = 10.0f;
     
@@ -299,16 +300,14 @@ public class PlayerMovement : MonoBehaviour
 }
 </pre>
 
-The following best practices should be considered when serializing data;
+The following best practices should be considered when serializing data:
 - Aim to have Unity serialize the smallest possible set of data
 - Don't have Unity serialize duplicate data or cached data
 - Avoid nested, recursive structures where you reference other classes
 
-Fields that are serialized and thus show in the editor should
-
 #### 3.3.4 Comments
 
-The following rules should always be followed when adding comments:
+Commenting should follow these rules:
 - Where ever possible, place comments above the code instead of beside it
 - The // (two slashes) style of comment tags should be used in most situations
 - Insert one space between the comment delimiter (//) and the comment text
@@ -320,10 +319,10 @@ The following rules should always be followed when adding comments:
 
 In order to improve the scripting workflow, the base template for new C# scripts can be customized. To do this, navigate to:
 
-> C:\Program Files\Unity\Hub\Editor\2021.3.13f1\Editor\Data\Resources\ScriptTemplates
+`C:\Program Files\Unity\Hub\Editor\2021.3.13f1\Editor\Data\Resources\ScriptTemplates`
 
 There, edit the `C# Script-NewBehaviourScript.cs`. In accordance with the [Coding Style](#coding-style) described above, the following template could be used as a bare-bones script setup:
-<pre>
+```
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -346,7 +345,7 @@ public class #SCRIPTNAME# : MonoBehaviour
     }
 }
 #ROOTNAMESPACEEND#
-</pre>
+```
 
 **[Back to Top](#table-of-contents)**
 
