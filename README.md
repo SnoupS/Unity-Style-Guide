@@ -4,8 +4,8 @@ This guide collects ideas, tools and resources for the entire game production pr
 
 In detail, this guide will cover the different `Phases of Game Developement`, with specific information on the different goals, used tools, strategies for organization, as well as learning material and useful resources.
 
+<a name="phases"></a>
 ## Phases of Game Developement
----
 [Concept Phase](#concept-phase) >
 [Pre-Production](#pre-production) >
 [Production](#production) >
