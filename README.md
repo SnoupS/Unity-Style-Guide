@@ -9,11 +9,11 @@ In detail, this guide will cover the different `Phases of Game Developement`, wi
 
 In the Concept Phase, you will funnel your many brainstormed game ideas into a single, clearly defined game concept and critically evaluate it. If you are satisfied, you will make the commitment to move into Pre-Production.
 
-### Table of Contents
-> 1. Content 1
-> 2. Content Number 2
-> 3. Last Piece
-> 4. Of COntent
+### Sections
+> 1. [Content 1](1_ConceptPhase.md/#content-1)
+> 2. [Content Number 2]()
+> 3. [Last Piece]()
+> 4. [Of COntent]()
 
 [[Go to Concept Phase]](1_ConceptPhase.md)
 
