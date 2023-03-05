@@ -1,8 +1,8 @@
-# Production Guide for Solo Game Developement
+# Production Guide for Solo Game Development
 
-This guide collects ideas, tools and resources for the entire game production process - from first idea to final release - and can serve as a blueprint for beginners, or as an interesting insight into my personal developement process for [GHOSTS & GLITTER](https://www.youtube.com/@ghostsnglitter). It is created alongside my first game projects and will therefore be updated regularly - any input from experts is appreciated!
+This guide collects ideas, tools and resources for the entire game development process - from the first idea to the final release. It can serve as a blueprint for beginners or as an interesting insight into my personal process at [GHOSTS & GLITTER](https://www.youtube.com/@ghostsnglitter). Created alongside my first game project, it will be updated regularly - any input from experts is welcome!
 
-In detail, this guide will cover the different `Phases of Game Developement`, with specific information on the different goals, used tools, strategies for organization, as well as learning material and useful resources.
+In detail, this guide will cover the different `Phases of Game Development`, with specific information on the different goals, tools used, strategies for organisation, as well as learning material and useful resources.
 
 <a name="concept-phase"></a>
 ## Concept Phase
@@ -20,20 +20,20 @@ In the Concept Phase, you will funnel your many brainstormed game ideas into a s
 <a name="pre-production"></a>
 ## Pre-Production
 
-In Pre-Production, the most important design decisions are going to be hashed out. This happens in an iterative process of designing and prototyping. You will also consider the required resources and create a plan for the realization of your game - including a first timeline - so that you can move into Production.
+During Pre-Production, you are going to hash out the most important design decisions. This is done through an iterative process of design and prototyping. You will also consider the resources that will be needed and draw up a plan for the realisation of your game - including an initial timeline - so that you can move on to Production.
 
 [[Go to Pre-Production]](2_PreProduction.md)
 
 <a name="production"></a>
 ## Production
 
-In Production, the specified design will be implemented. This too is an interative process consisting of different stages, which may see the design being updated. The implementation is accompanied by consistent content preparation for public showcasing of the game - with increased commitment towards the release, which will mark the end of this phase.
+In Production, you will implement the specified design. This too is an interative process consisting of different stages, during which the design may need to be updated. The implementation is accompanied by consistent content preparation for public presentation of the game - with an increased commitment towards the release, which will mark the end of this phase.
 
 [[Go to Production]](3_Production.md)
 
 <a name="post-release"></a>
 ## Post-Release
 
-In Post-Release, the focus is on increasing engagement, as well as updating and improving the game. Depending on the type of game, additional content may be developed.
+The post-release period is all about increasing engagement, and working on updates and improvements. Depending on the game, additional content may be created.
 
 [[Go to Post-Release]](4_PostRelease.md)

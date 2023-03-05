@@ -2,6 +2,14 @@
 
 # Post-Release
 
+> The post-release period is all about increasing engagement, and working on updates and improvements. Depending on the game, additional content may be created.
+
+#### Sections
+> 1. [Content](#)
+> 2. [Content](#)
+> 3. [Content](#)
+> 4. [Content](#)
+
 <a name="content-1"></a>
 ## Content 1
 
