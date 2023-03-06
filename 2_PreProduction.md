@@ -7,7 +7,7 @@ During Pre-Production, you are going to hash out the most important design decis
 <a name="toc"></a>
 ## Table of Contents
 
-> 1. [Setting Up A Game Backlog](#game-backlog)
+> 1. [Setting Up A Backlog](#backlog)
 >    - 1.1 [Structure](#structure)
 >    - 1.2 [Game Design Document](#game-design-document)
 >    - 1.3 [Milestones](#milestones)
@@ -15,8 +15,8 @@ During Pre-Production, you are going to hash out the most important design decis
 > 2. [Prototyping](#prototyping)
 >    - 2.1 [Shit](#)
 
-<a name="game-backlog"></a>
-## 1. Setting Up A Game Backlog
+<a name="backlog"></a>
+## 1. Setting Up A Backlog
 
 XXX
 
