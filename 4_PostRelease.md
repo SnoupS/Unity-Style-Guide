@@ -2,7 +2,9 @@
 
 # Post-Release
 
-> The post-release period is all about increasing engagement, and working on updates and improvements. Depending on the game, additional content may be created.
+<pre>
+The post-release period is all about increasing engagement, and working on updates and improvements. Depending on the game, additional content may be created.
+</pre>
 
 #### Sections
 > 1. [Content](#)
