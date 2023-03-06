@@ -1,4 +1,4 @@
-[[Back to Main Page]](README.md)
+[[Back to Main Page]](README.md/#production-guide-for-solo-game-development)
 
 # Concept Phase
 
@@ -21,9 +21,11 @@ A game idea is just that - an idea, like `"2D game where you can perform a sling
 <a name="brainstorming"></a>
 ### 1.1 Brainstorming
 
-If you are planning on using this guide for your own game project, you probably already have one or even many different game ideas in your head. If not, a focused brainstorming session can help you collect as many game ideas as possible or play around with different variations of the same idea. A good web-app for brainstorming is [Kinopio](https://kinopio.club/). It serves as a virtual whiteboard and can help you organize and connect ideas visually. I mostly use it temporarily for mind-mapping and instead collect the most promising game ideas as notes in my [OneNote]() notebook (which i use for other stuff, too). This makes it easier to write down notes on my mobile phone.
+If you are planning on using this guide for your own game project, you probably already have one or even many different game ideas in your head. If not, a focused brainstorming session can help you collect as many game ideas as possible or play around with different variations of the same idea. A good web-app for brainstorming is [Kinopio](https://kinopio.club/):
 
 ![Image](Images/sc_Kinopio.png)
+
+It serves as a virtual whiteboard and can help you organize and connect ideas visually. I mostly use it temporarily for mind-mapping and instead collect the most promising game ideas as notes in my [OneNote]() notebook (which i use for other stuff, too). This makes it easier to quiklcy write down ideas on my mobile phone.
 
 <a name="inspiration"></a>
 ### 1.2 Inspiration

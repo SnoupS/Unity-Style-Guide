@@ -12,7 +12,8 @@ This guide collects ideas, tools and resources for solo game development.
 >    - 2.2 [Pre-Production](#pre-production)
 >    - 2.3 [Production](#production)
 >    - 2.4 [Post-Release](#post-release)
-> 3. [General Learning Material](#learning-material)
+> 3. [General Resources](#gneral-resources)
+>    - 3.1 [Learning Material](#learning-material)
 
 <a name="introduction"></a>
 ## 1. Introduction
@@ -62,7 +63,17 @@ The post-release period is all about increasing engagement, and working on updat
 
 [[Go to Post-Release]](4_PostRelease.md)
 
+<a name="general-ressources"></a>
+## 3. General Ressources
+
+XXX
+
 <a name="learning-material"></a>
-## 3. General Learning Material
+### 3.1 Learning Material
+
+XXX
+
+<a name="tipps"></a>
+### 3.2 Tipps
 
 XXX
