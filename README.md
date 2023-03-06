@@ -7,6 +7,7 @@ This guide collects ideas, tools and resources for solo game development.
 
 > 1. [Introduction](#introduction)
 >    - 1.1 [Important Notes](#important-notes)
+>    - 1.2 [Key Principles](#key-principles)
 > 2. [Phases Of Game Development](#phases)
 >    - 2.1 [Concept Phase](#concept-phase)
 >    - 2.2 [Pre-Production](#pre-production)
@@ -20,7 +21,7 @@ This guide collects ideas, tools and resources for solo game development.
 
 In this guide, you will find a complete documentation of my personal game development process for [GHOSTS & GLITTER](https://www.youtube.com/@ghostsnglitter). If you are an aspiring indie game dev of any skill-level, this can serve as a blueprint and valuable reference. If you are a seasoned veteran, this may serve as little more than an interesting insight into my process - although any input from experts is welcome!
 
-In detail, this guide will cover the different `Phases of Game Development`, with specific information on the different goals, tools used, strategies for organisation, as well as learning material and useful resources - always with a focus on *solo development*. All of the phases have their own documents, which are linked below.
+In detail, this guide will cover the different `Phases of Game Development` as i have defined them for myself, with specific information on the different goals, tools used, strategies for organisation, as well as learning material and useful resources - always with a focus on *solo development*. All of the phases have their own documents, which are linked below.
 
 <a name="important-notes"></a>
 #### 1.1 Important Notes
@@ -29,6 +30,12 @@ Before going further, a couple of important notes front-up:
 - This guide covers game development in Unity (although this is only really important for the production phase).
 - This guide is being written alongside the development of my first couple of game projects and will be updated regularly.
 - This guide tries to take an *artistic perspective* on games and may therefore deviate in various ways from commercial game production.
+
+<a name="key-principles"></a>
+#### 1.2 Key Principles
+
+My process and with it this guide was designed with the following principles in mind:
+- Games don't have to be fun, but game development should be.
 
 <a name="phases"></a>
 ## 2. Phases Of Game Development
