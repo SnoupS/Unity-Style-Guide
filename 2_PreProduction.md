@@ -8,11 +8,38 @@ During Pre-Production, you are going to hash out the most important design decis
 ## Table of Contents
 
 > 1. [Setting Up A Game Backlog](#game-backlog)
-> 2. [Creating Detailed Design Specifications](#design-specifications)
->    - 2.1 [Game Design Document](#game-design-document)
->    - 2.2 [Technical Design Document](#technical-design-document)
+>    - 1.1 [Structure](#structure)
+>    - 1.2 [Game Design Document](#game-design-document)
+>    - 1.3 [Milestones](#milestones)
+>    - 1.4 [Timeline](#timeline)
+> 2. [Iterating On Design](#design-iteration)
 
 <a name="game-backlog"></a>
 ## 1. Setting Up A Game Backlog
 
-XXX (ClickUp, Structure)
+XXX
+
+<a name="structure"></a>
+### 1.1 Structure
+
+XXX
+
+<a name="game-design-document"></a>
+### 1.2 Game Design Document
+
+XXX
+
+<a name="milestones"></a>
+### 1.3 Milestones
+
+XXX
+
+<a name="timeline"></a>
+### 1.4 Timeline
+
+XXX
+
+<a name="design-iteration"></a>
+## 2. Iterating On Design
+
+XXX
