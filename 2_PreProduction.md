@@ -9,7 +9,8 @@ During Pre-Production, you are going to hash out the most important design decis
 
 > 1. [Setting Up A Game Backlog](#game-backlog)
 > 2. [Creating Detailed Design Specifications](#design-specifications)
-> 2. [Game Design Document]()
+>    - 2.1 [Game Design Document](#game-design-document)
+>    - 2.2 [Technical Design Document](#technical-design-document)
 
 <a name="game-backlog"></a>
 ## 1. Setting Up A Game Backlog

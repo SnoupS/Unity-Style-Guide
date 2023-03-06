@@ -321,7 +321,7 @@ In order to improve the scripting workflow, the base template for new C# scripts
 
 `C:\Program Files\Unity\Hub\Editor\2021.3.13f1\Editor\Data\Resources\ScriptTemplates`
 
-There, edit the `C# Script-NewBehaviourScript.cs`. In accordance with the [Coding Style](#coding-style) described above, [this template](Unity/Unity_ScriptTemplate.txt) could be used as a bare-bones script setup.
+There, edit the `C# Script-NewBehaviourScript.cs`. In accordance with the [Coding Style](#coding-style) described above, [this template](Production-Guide/Unity/Unity_ScriptTemplate.txt) could be used as a bare-bones script setup.
 
 **[Back to Top](#table-of-contents)**
 
