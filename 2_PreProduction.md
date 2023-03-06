@@ -12,7 +12,8 @@ During Pre-Production, you are going to hash out the most important design decis
 >    - 1.2 [Game Design Document](#game-design-document)
 >    - 1.3 [Milestones](#milestones)
 >    - 1.4 [Timeline](#timeline)
-> 2. [Iterating On Design](#design-iteration)
+> 2. [Prototyping](#prototyping)
+>    - 2.1 [Shit](#)
 
 <a name="game-backlog"></a>
 ## 1. Setting Up A Game Backlog
@@ -39,7 +40,7 @@ XXX
 
 XXX
 
-<a name="design-iteration"></a>
-## 2. Iterating On Design
+<a name="prototyping"></a>
+## 2. Prototyping
 
 XXX
