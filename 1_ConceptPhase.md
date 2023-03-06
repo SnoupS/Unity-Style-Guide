@@ -46,4 +46,5 @@ In order to create this concept, start by answering the following questions abou
 
 If you have trouble answering all of these questions in a satisfying way, you can try the following options:
 - ChatGPT
+[Image](Images/sc_ChatGPT.png)
 - Return to the [previous section](collecting-game-ideas).
