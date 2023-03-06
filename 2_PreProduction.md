@@ -7,12 +7,11 @@ During Pre-Production, you are going to hash out the most important design decis
 <a name="toc"></a>
 ## Table of Contents
 
-> 1. [Content](#)
-> 2. [Content](#)
-> 3. [Content](#)
-> 4. [Content](#)
+> 1. [Setting Up A Game Backlog](#game-backlog)
+> 2. [Creating Detailed Design Specifications](#design-specifications)
+> 2. [Game Design Document]()
 
-<a name="content-1"></a>
-## 1. Content 1
+<a name="game-backlog"></a>
+## 1. Setting Up A Game Backlog
 
-XXX
+XXX (ClickUp, Structure)

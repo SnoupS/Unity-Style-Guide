@@ -7,13 +7,13 @@ In the Concept Phase, you will funnel your many ideas into a single, clearly def
 <a name="toc"></a>
 ## Table of Contents
 
-> 1. [Collecting Game Ideas](#collecting-game-ideas)
+> 1. [Collecting Game Ideas](#collecting-ideas)
 >    - 1.1 [Brainstorming](#brainstorming)
 >    - 1.2 [Inspiration](#inspiration)
-> 2. [Creating a Game Concept](#creating-a-game-concept)
-> 3. [Evaluation the Concept](#evaluating-the-concept)
+> 2. [Creating A Game Concept](#creating-concept)
+> 3. [Evaluating The Concept](#evaluating-concept)
 
-<a name="collecting-game-ideas"></a>
+<a name="collecting-ideas"></a>
 ## 1. Collecting Game Ideas
 
 A game idea is just that - an idea, like `"2D game where you can perform a slingshot move by clicking and dragging the player character"`. There are no specifics required at this stage.
@@ -40,8 +40,8 @@ Personally, i often can't stop my brain from constantly producing new game ideas
 - *Collaborate with others*: Brainstorm with others and collaborate on game ideas. Consider working with people from different backgrounds and skill sets, such as artists or programmers.
 - *Think about your target audience*: Consider who you want to make games for and what they would enjoy. Think about the age group, interests, and gaming experience of your target audience.
 
-<a name="creating-a-game-concept"></a>
-## 2. Creating a Game Concept
+<a name="creating-concept"></a>
+## 2. Creating A Game Concept
 
 It is time to create a specific game concept. This means you will need to choose a single game idea that you want to work out more thoroughly. Although the game concept will still only be a very short summary, with it you are laying the foundation for everything that follows (_spoilers_, what follows is a lot of work) and i have seen indie developers create stunning art and impressive tech demos for projects that they ultimately had to cancel, because they didn't have a solid game concept.
 
@@ -53,8 +53,8 @@ If you need help, you might want to try turning your game idea into a concept by
 
 > If you have trouble turning a vague game idea into a concrete concept, you should consider that as a warning sign - not because the idea is worthless, but because you should not move any further into the development process before figuring out a concept. Seriously. Take your time, let the idea grow in the back of your mind while you're working on something else. Instead of breaking your head about this one idea, consider going back to the [previous step](#collecting-game-ideas).
 
-<a name="evaluating-the-concept"></a>
-## 3. Evaluating the Concept
+<a name="evaluating-concept"></a>
+## 3. Evaluating The Concept
 
 Now that you have a game concept, there is one last evaluation to go through before moving into Pre-Production. Especially for solo game development, it can be an extremely important step, as it might be the last chance to find some critical shortcomings of your concept before wasting a ton of time on it.
 

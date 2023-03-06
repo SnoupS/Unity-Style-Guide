@@ -321,31 +321,7 @@ In order to improve the scripting workflow, the base template for new C# scripts
 
 `C:\Program Files\Unity\Hub\Editor\2021.3.13f1\Editor\Data\Resources\ScriptTemplates`
 
-There, edit the `C# Script-NewBehaviourScript.cs`. In accordance with the [Coding Style](#coding-style) described above, the following template could be used as a bare-bones script setup:
-```
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-#ROOTNAMESPACEBEGIN#
-/// <summary>  
-/// Brief summary of what the class does
-/// </summary>
-public class #SCRIPTNAME# : MonoBehaviour
-{
-    [Header("Config")]
-    [SerializeField]
-    
-    private void Start()
-    {
-    }
-
-    private void Update()
-    {
-    }
-}
-#ROOTNAMESPACEEND#
-```
+There, edit the `C# Script-NewBehaviourScript.cs`. In accordance with the [Coding Style](#coding-style) described above, [this template](Unity/Unity_ScriptTemplate.txt) could be used as a bare-bones script setup.
 
 **[Back to Top](#table-of-contents)**
 

@@ -7,7 +7,7 @@ This guide collects ideas, tools and resources for solo game development.
 
 > 1. [Introduction](#introduction)
 >    - 1.1 [Important Notes](#important-notes)
-> 2. [Phases of Game Development](#phases)
+> 2. [Phases Of Game Development](#phases)
 >    - 2.1 [Concept Phase](#concept-phase)
 >    - 2.2 [Pre-Production](#pre-production)
 >    - 2.3 [Production](#production)
@@ -31,7 +31,7 @@ Before going further, a couple of important notes front-up:
 - This guide tries to take an *artistic perspective* on games and may therefore deviate in various ways from commercial game production.
 
 <a name="phases"></a>
-## 2. Phases of Game Development
+## 2. Phases Of Game Development
 
 This is the main part of the guide. What follows are short descriptions of the different phases of game development as i have defined them for myself, as well as links to the detailed articles.
 
