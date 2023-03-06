@@ -74,4 +74,4 @@ In order to evaluate the concept, answer all of the following questions: [^1]
 
 > Once again, if you have trouble answering these questions, consider putting in more work into the concept or going back to the [Brainstorming](#brainstorming) section.
 
-If you have answered all of the questions in a satisfying way, you are ready to move into [Pre-Production](2_PreProduction.md).
+If you have answered all of the questions in a satisfying way, you are ready to move into [Pre-Production](2_PreProduction.md/#pre-production).
