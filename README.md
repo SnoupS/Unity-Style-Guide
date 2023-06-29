@@ -1,60 +1,60 @@
-# Unity Style-Guide
+# Unity Style-Guide RU
 
-This article contains specific rules for game developement in Unity regarding project structure, asset names and scripts.
+Эта статья содержит конкретные правила разработки игр в Unity, касающиеся структуры проекта, имен ресурсов и сценариев.
 
-#### Shortcuts
-- [Assets Folder Structure](#assets-folder-structure)
-- [Scene Structure](#scene-structure)
-- [C# Class Structure](#class-structure)
-- [Asset Name Modifiers](#asset-name-modifiers)
+#### Ярлыки
+- [Структура папки активов](#assets-folder-structure)
+- [Структура сцены](#scene-structure)
+- [Структура класса С#](#class-structure)
+- [Модификаторы имени актива](#asset-name-modifiers)
 
 <a name="toc"></a>
-## Table of Contents
+## Оглавление
 
-> 1. [Introduction](#introduction)
-> 2. [Project Structure](#project-structure)
-> 3. [Scripts](#scripts)
-> 4. [Asset Naming Conventions](#asset-naming-conventions)
+> 1. [Введение](#introduction)
+> 2. [Структура проекта](#project-structure)
+> 3. [Скрипты](#scripts)
+> 4. [Соглашения об именах активов](#asset-naming-conventions)
 
 <a name="introduction"></a>
-## 1. Introduction
+## 1. Введение
 
-#### If your project already has a style guide, you should follow it.
-If you are working on a project or with a team that has a pre-existing style guide, it should be respected.  Any inconsistency between an existing style guide and this guide should defer to the existing.
+#### Если в вашем проекте уже есть руководство по стилю, вы должны следовать ему.
+Если вы работаете над проектом или с командой, у которой уже есть руководство по стилю, его следует уважать. Любое несоответствие между существующим руководством по стилю и этим руководством должно относиться к существующему.
 
-Style guides should be living documents however and you should propose style guide changes to an existing style guide as well as this guide if you feel the change benefits all usages.
+Однако руководства по стилю должны быть живыми документами, и вам следует предлагать изменения руководства по стилю в существующем руководстве по стилю, а также в этом руководстве, если вы чувствуете, что изменение принесет пользу всем пользователям.
 
-> ##### *Arguments over style are pointless. There should be a style guide, and you should follow it.*
-> [_Rebecca Murphey_](https://rmurphey.com)
+> ##### *Споры о стиле бессмысленны. Должно быть руководство по стилю, и вы должны ему следовать.*
+> [_Ребекка Мерфи_] (https://rmurphey.com)
 
-#### All structure, assets, and code in any project should look like a single person created it, no matter how many people contributed.
-Moving from one project to another should not cause a re-learning of style and structure. Conforming to a style guide removes unneeded guesswork and ambiguities.
+#### Вся структура, активы и код в любом проекте должны выглядеть так, как будто их создал один человек, независимо от того, сколько людей внесли свой вклад.
+Переход от одного проекта к другому не должен вызывать повторного изучения стиля и структуры. Соответствие руководству по стилю устраняет ненужные догадки и двусмысленности.
 
-It also allows for more productive creation and maintenance as one does not need to think about style, simply follow instructions. This style guide is written with best practices in mind, meaning that by following this style guide you will also minimize hard to track issues.
+Это также позволяет более продуктивно создавать и поддерживать, поскольку не нужно думать о стиле, просто следуйте инструкциям. Это руководство по стилю написано с учетом лучших практик, а это означает, что, следуя этому руководству по стилю, вы также сведете к минимуму проблемы, которые трудно отследить.
 
-#### Friends do not let friends have bad style.
-If you see someone working either against a style guide or no style guide, try to correct them.
+#### Друзья не позволяйте друзьям иметь плохой стиль.
+Если вы видите, что кто-то работает либо против руководства по стилю, либо без руководства по стилю, постарайтесь исправить его.
 
-When working within a team or discussing within a community, it is far easier to help and to ask for help when people are consistent. Nobody likes to help untangle someone's spaghetti code or deal with assets with names they can't understand.
+При работе в команде или обсуждении в сообществе гораздо легче помогать и просить о помощи, когда люди последовательны. Никто не любит помогать распутывать чей-то спагетти-код или иметь дело с активами с именами, которые они не могут понять.
 
-If you are helping someone who's work conforms to a different but consistent and sane style guide, you should be able to adapt to it. If they do not conform to any style guide, please direct them here.
+Если вы помогаете кому-то, чья работа соответствует другому, но последовательному и разумному руководству по стилю, вы должны быть в состоянии адаптироваться к нему. Если они не соответствуют какому-либо руководству по стилю, направьте их сюда.
 
 <a name="project-structure"></a>
-## 2. Project Structure
+## 2. Структура проекта
 
-### Sections
-> 2.1 [Assets Folder Structure](#assets-folder-structure)
+### Разделы
+> 2.1 [Структура папки активов](#assets-folder-structure)
 
-> 2.2 [Scene Structure](#scene-structure)
+> 2.2 [Структура сцены](#scene-structure)
 
 <a name="assets-folder-structure"></a>
-### 2.1 Assets Folder Structure
+### 2.1 Структура папки активов
 
-The directory structure style of a project should be considered law. Asset naming conventions and content directory structure go hand in hand, and a violation of either causes unneeded chaos.
+Стиль структуры каталогов проекта следует считать законом. Соглашения об именовании активов и структура каталогов содержимого идут рука об руку, и нарушение любого из них приводит к ненужному хаосу.
 
-In this style, we will be using a structure that relies more on filtering and search abilities of the Project Window for those working with assets to find assets of a specific type instead of another common structure that groups asset types with folders.
+В этом стиле мы будем использовать структуру, которая больше полагается на возможности фильтрации и поиска в окне проекта для тех, кто работает с активами, чтобы найти активы определенного типа, вместо другой общей структуры, которая группирует типы активов с папками.
 
-> Because we are using a prefix [naming convention](#asset-name-modifiers), using folders to contain assets of similar types such as `Meshes`, `Textures`, and `Materials` is a redundant practice as asset types are already both sorted by prefix as well as able to be filtered in the content browser.
+> Поскольку мы используем префикс [соглашение об именах](#asset-name-modifiers), использование папок для хранения ресурсов похожих типов, таких как `Сети`, `Текстуры` и `Материалы`, является избыточной практикой, поскольку типы активов уже отсортированы по префиксу, а также могут быть отфильтрованы в браузере контента.
 <a name="assets-folder-structure-preview"></a>
 <pre>
 Assets
@@ -98,48 +98,48 @@ Assets
                     Fonts
 </pre>
 
-#### 2.1.1 Folder Names
+#### 2.1.1 Имена папок
 
-- Always use PascalCase
-- Never use spaces
-- Never use unicode characters and other symbols
-- Start folder name with "_" to move them to the top of the hierarchy
+- Всегда используйте PascalCase
+- Никогда не используйте пробелы
+- Никогда не используйте символы Юникода и другие символы
+- Начинайте имя папки с «_», чтобы переместить их на вершину иерархии.
 
-#### 2.1.2 Top Level Folder For Project Specific Assets
+#### 2.1.2 Папка верхнего уровня для конкретных активов проекта
 
-All of a project's assets should exist in a folder named after the project. For example, if your project is named 'Generic Shooter', _all_ of it's content should exist in `Assets/GenericShooter`.
+Все активы проекта должны находиться в папке с именем проекта. Например, если ваш проект называется `Generic Shooter`, _все_ его содержимое должно существовать в `Assets/GenericShooter`.
 
-> The `Sandbox` folder provides developers separate areas for WIP assets and local testing. Your project does not rely on these assets and so they are not project specific.
+> Папка `Sandbox` предоставляет разработчикам отдельные области для ресурсов WIP и локального тестирования. Ваш проект не использует эти активы, поэтому они не зависят от конкретного проекта.
 
-> `Third-party Assets` will import directly into the Assets folder. Moving them around can break their functionality and the top level folder for project specific assets ensures nothing gets overwritten, which is why third-party asset imports can be left where they are.
+> `Third-party Assets` будут импортированы непосредственно в папку «Активы». Их перемещение может нарушить их функциональность, а папка верхнего уровня для конкретных ресурсов проекта гарантирует, что ничего не будет перезаписано, поэтому импорт сторонних ресурсов можно оставить там, где они есть.
 
-#### 2.1.3 All Scene Files Go In A Folder Called Levels
+#### 2.1.3 Все файлы сцены помещаются в папку с названием Levels
 
-Level files are incredibly special and it is common for every project to have its own map naming system, especially if they work with sub-levels or streaming levels. No matter what system of map organization is in place for the specific project, all levels should belong in a dedicated levels folder.
+Файлы уровней невероятно особенные, и каждый проект обычно имеет свою собственную систему именования карт, особенно если они работают с подуровнями или потоковыми уровнями. Независимо от того, какая система организации карты используется для конкретного проекта, все уровни должны находиться в отдельной папке уровней.
 
-Being able to tell someone to open a specific map without having to explain where it is is a great time saver and general 'quality of life' improvement. It is common for levels to be within sub-folders, such as `Levels/Campaign1/` or `Levels/Arenas`, but the most important thing here is that they all exist within `Assets/ProjectNameName/Levels`.
+Возможность сказать кому-то открыть конкретную карту, не объясняя, где она находится, — это отличная экономия времени и общее улучшение «качества жизни». Обычно уровни находятся в подпапках, таких как `Levels/Campaign1/` или `Levels/Arenas`, но самое главное здесь то, что все они существуют в `Assets/ProjectNameName/Levels`.
 
-This also simplifies the job of cooking for engineers. Wrangling levels for a build process can be extremely frustrating if they have to dig through arbitrary folders for them. If a team's levels are all in one place, it is much harder to accidentally not cook a map in a build. It also simplifies lighting build scripts as well QA processes.
+Это также упрощает работу инженеров по приготовлению пищи. Борьба с уровнями для процесса сборки может быть чрезвычайно неприятной, если им приходится копаться в произвольных папках для них. Если уровни команды находятся в одном месте, то случайно не сварить карту в билде гораздо сложнее. Это также упрощает сценарии сборки освещения, а также процессы контроля качества.
 
-#### 2.1.4 Very Large Asset Sets Get Their Own Folder Layout
+#### 2.1.4 Очень большие наборы ресурсов получают собственный макет папки
 
-There are certain asset types that have a huge volume of related files where each asset has a unique purpose. The two most common are Animation and Audio assets. If you find yourself having 15+ of these assets that belong together, they should be together.
+Существуют определенные типы активов, которые имеют огромный объем связанных файлов, где каждый ресурс имеет уникальное назначение. Двумя наиболее распространенными являются анимация и аудио активы. Если вы обнаружите, что у вас есть более 15 таких активов, которые принадлежат друг другу, они должны быть вместе.
 
-For example, animations that are shared across multiple characters should lay in `Characters/Common/Animations` and may have sub-folders such as `Locomotion` or `Cinematic`.
+Например, анимация, которая используется несколькими персонажами, должна лежать в `Characters/Common/Animations` и может иметь подпапки, такие как `Locomotion` или `Cinematic`.
 
-#### 2.1.5 MaterialLibrary
+#### 2.1.5 Библиотека материалов
 
-If your project makes use of master materials, layered materials, or any form of reusable materials or textures that do not belong to any subset of assets, these assets should be located in `Assets/ProjectName/MaterialLibrary`.
+Если в вашем проекте используются мастер-материалы, многослойные материалы или любые формы повторно используемых материалов или текстур, которые не принадлежат ни к какому подмножеству ресурсов, эти ресурсы должны быть расположены в `Assets/ProjectName/MaterialLibrary`.
 
-This way all 'global' materials have a place to live and are easily located.
+Таким образом, все «глобальные» материалы имеют место для жизни и легко обнаруживаются.
 
-> This also makes it incredibly easy to enforce a 'use material instances only' policy within a project. If all artists and assets should be using material instances, then the only regular material assets that should exist are within this folder. You can easily verify this by searching for base materials in any folder that isn't the `MaterialLibrary`.
-The `MaterialLibrary` doesn't have to consist of purely materials. Shared utility textures, material functions, and other things of this nature should be stored here as well within folders that designate their intended purpose. For example, generic noise textures should be located in `MaterialLibrary/Utility`.
+> Это также позволяет невероятно легко применять политику «использовать только экземпляры материала» в рамках проекта. Если все исполнители и активы должны использовать экземпляры материалов, то в этой папке должны существовать только обычные материальные активы. Вы можете легко убедиться в этом, выполнив поиск базовых материалов в любой папке, кроме `MaterialLibrary`.
+`MaterialLibrary` не обязательно должна состоять только из материалов. Общие служебные текстуры, функции материалов и другие подобные вещи также должны храниться здесь, а также в папках, обозначающих их предназначение. Например, общие текстуры шума должны находиться в `MaterialLibrary/Utility`.
 
-Any testing or debug materials should be within `MaterialLibrary/Debug`. This allows debug materials to be easily stripped from a project before shipping and makes it incredibly apparent if production assets are using them if reference errors are shown.
+Любые материалы для тестирования или отладки должны находиться в `MaterialLibrary/Debug`. Это позволяет легко удалять отладочные материалы из проекта перед отправкой и делает невероятно очевидным, используются ли они в производственных активах, если отображаются справочные ошибки.
 
 <a name="scene-structure"></a>
-### 2.2 Scene Structure
+### 2.2 Структура сцены
 <pre>
 SceneName
     Debug
@@ -156,24 +156,24 @@ SceneName
     _Dynamic
 </pre>
 
-**[Back to Top](#table-of-contents)**
+**[Наверх](#table-of-contents)**
 
 <a name="scripts"></a>
-## 3. Scripts
+## 3. Скрипты
 
-### Sections
-> 3.1 [Class Structure](#class-structure)
+### Разделы
+> 3.1 [Структура класса](#class-structure)
 
-> 3.2 [Naming Conventions](#script-naming-conventions)
+> 3.2 [Соглашения об именах](#script-naming-conventions)
 
-> 3.3 [Coding Style](#coding-style)
+> 3.3 [Стиль кода](#code-style)
 
-> 3.4 [Script Template](#script-template)
+> 3.4 [Шаблон скрипта](#script-template)
 
 <a name="class-structure"></a>
-### 3.1 Class Structure
+### 3.1 Структура класса
 
-Class members should be ordered alphabetically, and grouped into sections:
+Члены класса должны быть упорядочены в алфавитном порядке и сгруппированы в разделы:
 1. Constant Fields
 2. Static Fields
 3. Fields
@@ -185,31 +185,31 @@ Class members should be ordered alphabetically, and grouped into sections:
 9. Private Methods
 10. Nested types
 
-Within each of these groups, class members should be ordered by access:
+Внутри каждой из этих групп члены класса должны быть упорядочены по доступу:
 1. public
 2. internal
 3. protected
 4. private
 
 <a name="script-naming-conventions"></a>
-### 3.2 Naming Conventions
+### 3.2 Соглашения об именах
 
-The naming of class members should follow the these rules:
-- Constant Fields: UPPERCASE_VARIABLE
-- Static Fields: camelCase
-- Fields: camelCase
-- Constructors: PascalCase
-- Properties: PascalCase
-- Events / Delegates: PascalCase
-- Methods: PascalCase
-- Nested types: PascalCase
+Именование членов класса должно соответствовать следующим правилам:
+- Константные поля: UPPERCASE_VARIABLE
+- Статические поля: camelCase
+- Поля: верблюжий регистр
+- Конструкторы: PascalCase
+- Свойства: PascalCase
+- События/Делегаты: PascalCase
+- Методы: PascalCase
+- Вложенные типы: PascalCase
 
-<a name="coding-style"></a>
-### 3.3 Coding Style
+<a name="code-style"></a>
+### 3.3 Стиль кода
 
-#### 3.3.1 Curly Brackets
+#### 3.3.1 Фигурные скобки
 
-A consistent approach for the placing of curly brackets / braces should be adopted. The choice is mostly subjective, but in this Style-Guide, the following format is used:
+Следует применять последовательный подход к размещению фигурных скобок/скобок. Выбор в основном субъективен, но в этом Руководстве по стилю используется следующий формат:
 <pre>
 private void Update()
 {
@@ -217,11 +217,11 @@ private void Update()
 }
 </pre>
 
-Despite scripts becoming more compact when placing curly brackets on the same line and not on a new one, there are other compelling reasons for using the format above:
-1. It is in line with [Microsoft's C# Coding Conventions](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions) and Unity's standard
-2. The otherwise empty line breaks with the curly brackets provide a symmetrical framing of the code inside, which - especially for longer scripts - can provide a better overview of the code's structure
-3. For functions with many different parameters, placing the curly brackets on a new line helps destinguish function parameters from function code. See the two examples below:
-Bad Example:
+Несмотря на то, что скрипты становятся более компактными при размещении фигурных скобок на той же строке, а не на новой, есть и другие веские причины для использования вышеуказанного формата:
+1. Это соответствует [Соглашениям о кодировании C# Microsoft] (https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions) и стандарту Unity.
+2. В противном случае пустые разрывы строк с фигурными скобками обеспечивают симметричное обрамление кода внутри, что — особенно для более длинных скриптов — может обеспечить лучший обзор структуры кода.
+3. Для функций с большим количеством различных параметров размещение фигурных скобок на новой строке помогает отличить параметры функции от кода функции. См. два примера ниже:
+Плохой пример:
 <pre>
 public void MyFunction(
     Vector2 parameterOne,
@@ -232,7 +232,7 @@ public void MyFunction(
     int localTwo
 }
 </pre>
-Good Example:
+Хороший пример:
 <pre>
 public void MyFunction(
     Vector2 parameterOne,
@@ -245,9 +245,9 @@ public void MyFunction(
 }
 </pre>
 
-#### 3.3.2 Summaries
+#### 3.3.2 Краткое содержание
 
-All classes and functions that have an access modifier of `public` should have a summary.
+Все классы и функции, имеющие модификатор доступа public, должны иметь краткое содержание.
 
 ```
 /// <summary>  
@@ -270,16 +270,15 @@ public class MyClass : MonoBehaviour
 }
 ```
 
-#### 3.3.3 Serialization
+#### 3.3.3 Сериализация
 
-Prefer to use the attribute [SerializeField] instead of making a variable public.
+Лучше использовать атрибут [SerializeField] вместо того, чтобы делать переменную общедоступной.
 
-When serializing fields, make use of Attributes to make editor interaction in the inspector easier to understand:
-- Always use `Header` to group different fields - common groups are "Config" and "Interactable"
-- Use `Tooltop` to add a short description of how changing this value affects the value of this script, if it is not immediately appearant from the variable name
-- Use `Range` to use a slider in the inspector and define a value range if the bounds of the variable are known
-
-Example:
+При сериализации полей используйте атрибуты, чтобы облегчить понимание взаимодействия с редактором в инспекторе:
+- Всегда используйте `Заголовок` для группировки различных полей — распространенными группами являются `Конфигурация` и `Взаимодействующие`.
+- Используйте `Tooltop`, чтобы добавить краткое описание того, как изменение этого значения влияет на значение этого скрипта, если оно сразу не появляется из имени переменной.
+- Используйте `Диапазон`, чтобы использовать ползунок в инспекторе и определить диапазон значений, если известны границы переменной.
+Пример:
 <pre>
 public class PlayerMovement : MonoBehaviour
 {
@@ -300,73 +299,73 @@ public class PlayerMovement : MonoBehaviour
 }
 </pre>
 
-The following best practices should be considered when serializing data:
-- Aim to have Unity serialize the smallest possible set of data
-- Don't have Unity serialize duplicate data or cached data
-- Avoid nested, recursive structures where you reference other classes
+При сериализации данных следует учитывать следующие рекомендации:
+- Стремитесь к тому, чтобы Unity сериализовала наименьший возможный набор данных.
+- Unity не сериализует повторяющиеся данные или кэшированные данные.
+- Избегайте вложенных рекурсивных структур, в которых вы ссылаетесь на другие классы.
 
-#### 3.3.4 Comments
+#### 3.3.4 Комментарии
 
-Commenting should follow these rules:
-- Where ever possible, place comments above the code instead of beside it
-- The // (two slashes) style of comment tags should be used in most situations
-- Insert one space between the comment delimiter (//) and the comment text
-- Begin comment text with an uppercase letter
-- End comment text with a period
+Комментирование должно соответствовать следующим правилам:
+- По возможности размещайте комментарии над кодом, а не рядом с ним.
+- В большинстве ситуаций следует использовать стиль тегов комментариев // (две косые черты).
+- Вставьте один пробел между разделителем комментария (//) и текстом комментария
+- Начинайте текст комментария с заглавной буквы
+- Конец текста комментария точкой
 
 <a name="script-template"></a>
-### 3.4 Script Template
+### 3.4 Шаблон скрипта
 
-In order to improve the scripting workflow, the base template for new C# scripts can be customized. To do this, navigate to:
+Чтобы улучшить рабочий процесс программирования, можно настроить базовый шаблон для новых скриптов C#. Для этого перейдите к:
 
-`C:\Program Files\Unity\Hub\Editor\2021.3.13f1\Editor\Data\Resources\ScriptTemplates`
+`*\Unity\Hub\Editor\2021.3.13f1\Editor\Data\Resources\ScriptTemplates`
 
-There, edit the `C# Script-NewBehaviourScript.cs`. In accordance with the [Coding Style](#coding-style) described above, [this template](Unity_ScriptTemplate.txt) could be used as a bare-bones script setup.
+Там отредактируйте файл `C# Script-NewBehaviourScript.cs`. В соответствии со [Стилем кода](#code-style) описано выше, [этот шаблон](Unity_ScriptTemplate.txt) можно использовать в качестве базового скрипта.
 
-**[Back to Top](#table-of-contents)**
+**[Наверх](#table-of-contents)**
 
 <a name="asset-naming-conventions"></a>
-## 4. Asset Naming Conventions
+## 4. Соглашения об именовании активов
 
-### Sections
-> 4.1 [Rules](#rules)
+### Разделы
+> 4.1 [Правила](#rules)
 
-> 4.2 [Asset Name Modifiers](#asset-name-modifiers)
+> 4.2 [Модификаторы имени актива](#asset-name-modifiers)
 
-**All asset names use PascalCase**
+**Все имена активов используют PascalCase**
 
-**All asset names should follow the standard of `Prefix_BaseAssetName_Variant_Suffix`.**
+**Все имена активов должны соответствовать стандарту `Prefix_BaseAssetName_Variant_Suffix`.**
 
 <a name="rules"></a>
-### 4.1 Rules
+### 4.1 Правила
 
-All assets should have a _Base Asset Name_. It represents a logical grouping of related assets.
+Все активы должны иметь _BaseAssetName_. Оно представляет собой логическую группу связанных активов.
 
-Here are some detailed rules regarding each element:
+Вот несколько подробных правил относительно каждого элемента:
 * `Prefix` and `Suffix` are to be determined by the asset type through the following [Asset Name Modifier](#asset-name-modifiers) table.
 * `BaseAssetName` should be a short and easily recognizable name related to the context of this group of assets. For example, if you had a character named Bob, all of Bob's assets would have the `BaseAssetName` of `Bob`.
 * For _unique and specific variations_ of assets, `Variant` is a short and easily recognizable name that represents logical grouping of assets that are a subset of an asset's base name. For example, if Bob had multiple skins these skins should still use `Bob` as the `BaseAssetName` but include a recognizable `Variant`. An 'Evil' skin would be referred to as `Bob_Evil`.
 * For _unique but generic variations_ of assets, `Variant` is a two digit number starting at `01`. For example, if you have an environment artist generating nondescript rocks, they would be named `Rock_01`, `Rock_02`, `Rock_03`, etc. Except for rare exceptions, you should never require a three digit variant number. If you have more than 100 assets, you should consider organizing them with different base names or using multiple variant names.
 * Depending on how your asset variants are made, you can chain together variant names. For example, if you are creating flooring assets for an Arch Viz project you should use the base name `Flooring` with chained variants such as `Flooring_Marble_01`, `Flooring_Maple_01`, `Flooring_Tile_Squares_01`.
 
-Exceptions:
-* Scenes
+Исключения:
+* Сцены
     * Scenes should be named in accordance with the specific [Level Structure](#level-structure) chosen for the project. Thus, `Prefix` and `Suffix` are not determined by asset type, but follow a unique convention (example found under [Asset Name Modifiers(#asset-name-modifiers)]).
-* Scripts
+* Скрипты
     * Unlike other asset types, scripts are all stored in the same folder. Additionally, the contained C# Class must have the same name as the script's asset name. Therefore, scripts should only be named with a `BaseAssetName`.
 
 <a name="asset-name-modifiers"></a>
-### 4.2 Asset Name Modifiers
+### 4.2 Модификаторы имени актива
 
-| Asset Type                    | Prefix    | Suffix    | Notes                            |
+| Тип актива                    | Префикс   | Суффикс   | Примечание                       |
 | ----------------------------- | --------- | --------- | -------------------------------- |
-| Scene                         | *         |           | Should be in a folder called [Levels](#assets-folder-structure-preview), e.g. `Levels/A4_C17_Parking_Garage.unity` |
+| Scene                         | *         |           | Должен находиться в папке с именем [Levels](#assets-folder-structure-preview), например `Levels/A4_C17_Parking_Garage.unity` |
 | > Persistent                  |           | _P        |                                  |
 | > Audio                       |           | _Audio    |                                  |
 | > Lighting                    |           | _Lighting |                                  |
 | > Geometry                    |           | _Geo      |                                  |
 | > Gameplay                    |           | _Gameplay |                                  |
-| Script                        |           |           | Should be in a folder called [Scripts](#assets-folder-structure-preview), e.g. `Scripts/PlayerMovement.cs` |
+| Script                        |           |           | Должен находиться в папке с именем [Scripts](#assets-folder-structure-preview), например `Scripts/PlayerMovement.cs` |
 | 3D-Model                      |           |           |                                  |
 | > Character                   | CH_       |           |                                  |
 | > Vehicle                     | VH_       |           |                                  |
@@ -388,4 +387,4 @@ Exceptions:
 | Particle System               | PS_       |           |                                  |
 | Render Pipeline               | BRP_/URP_/HDRP_ |     |                                  |
 
-**[Back to Top](#table-of-contents)**
+**[Наверх](#table-of-contents)**
