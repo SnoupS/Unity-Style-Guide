@@ -322,7 +322,7 @@ public class PlayerMovement : MonoBehaviour
 
 `*\Unity\Hub\Editor\2021.3.13f1\Editor\Data\Resources\ScriptTemplates`.
 
-Там отредактируйте `C# Script-NewBehaviourScript.cs`. В соответствии с описанным выше [стилем кодирования](#coding-style), [этот шаблон](Unity_ScriptTemplate.txt) может быть использован в качестве базовой установки скрипта.
+Там отредактируйте `C# Script-NewBehaviourScript.cs`. В соответствии с описанным выше [стилем кодирования](#coding-style), [этот шаблон](ScriptTemplate.txt) может быть использован в качестве базовой установки скрипта.
 
 **[Наверх](#table-of-contents)**
 
