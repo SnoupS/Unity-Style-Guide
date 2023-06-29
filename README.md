@@ -57,40 +57,39 @@
 <a name="assets-folder-structure-preview"></a>
 <pre>
 Assets
-    <a name="structure-sandbox">_Sandbox</a>
+    <a name="structure-developers">_Developers</a>
         DeveloperName
-            Testing
-            WIP
+            (Незавершенные активы)
     <a name="structure-project-specific">ProjectName</a>
-            _Levels             // Scenes
+            _Levels             // Сцены.
                 Frontend
                 Act1
                     Level1
-            FX                  // Particle Systems, Textures, etc.
-                Vehicles
-            Gameplay            // Meshes, Textures, Prefabs, Materials, etc.
-                Characters
-                Equipment
-                Items
-                Vehicles
-            MaterialLibrary     // (Debug) Materials, Shaders, Generic Noise Textures, etc.
-                Debug
-                Shaders
-                Utility
-            Objects             // Meshes, Textures, Materials, etc.
-                Architecture
-                Props
-            Scripts             // C# Scripts
+            _Scripts             // C# Скрипты.
                 AI
                 Gameplay
                     Player
                 Tools
-            Settings            // Input System Assets, Render Pipeline Assets, etc.
+            FX                  // Системы частиц, текстуры и т.д.
+                Vehicles
+            Gameplay            // Меши, текстуры, префабы, материалы и т.д.
+                Characters
+                Equipment
+                Items
+                Vehicles
+            MaterialLibrary     // (Отладка) Материалы, шейдеры, общие текстуры шума и т.д.
+                Debug
+                Shaders
+                Utility
+            Objects             // Меши, текстуры, материалы и т.д.
+                Architecture
+                Props
+            Settings            // Активы системы ввода, ресурсы конвейера рендеринга и т.д.
                 Input
                     Controls
                 RenderPipeline
-            Sound               // Audio files
-            UI                  // UI related assets and resources
+            Sound               // Аудио файлы.
+            UI                  // Активы и ресурсы, связанные с пользовательским интерфейсом.
                 Art
                     Buttons
                 Resources
@@ -108,7 +107,7 @@ Assets
 
 Все активы проекта должны существовать в папке, названной по имени проекта. Например, если ваш проект называется `Generic Shooter`, все его содержимое должно находиться в папке `Assets/GenericShooter`.
 
-> Папка `Sandbox` предоставляет разработчикам отдельные области для активов WIP и локального тестирования. Ваш проект не зависит от этих активов, поэтому они не являются специфичными для проекта.
+> Папка `_Developers` предоставляет разработчикам отдельные области для разработки активов и локального тестирования. Ваш проект не должен зависить от этих активов.
 
 > `Third-party Assets` будут импортироваться непосредственно в папку Assets. Их перемещение может нарушить их функциональность, а папка верхнего уровня для специфических активов проекта гарантирует, что ничего не будет перезаписано, поэтому импорт сторонних активов можно оставить на месте.
 
@@ -285,14 +284,14 @@ public class MyClass : MonoBehaviour
 public class PlayerMovement : MonoBehaviour
 {
     [Header("Config")]
-    [SerializeField] private Transform playerTransform;
+    [SerializeField] private Transform _playerTransform;
 
     [Header("Interactable")]
     [Range(0.0f, 25.0f)]
-    [SerializeField] private float speed = 10.0f;
+    [SerializeField] private float _speed = 10.0f;
     [Tooltip("Определяет выносливость игрока, которая расходуется при беге.")]
     [Range(0.0f, 25.0f)]
-    [SerializeField] private float stamina = 10.0f;
+    [SerializeField] private float _stamina = 10.0f;
     
     private void Start()
     {
@@ -361,19 +360,22 @@ public class PlayerMovement : MonoBehaviour
 
 | Тип актива                    | Префикс   | Суффикс   | Примечание                       |
 | ----------------------------- | --------- | --------- | -------------------------------- |
-| Scene                         | *         |           | Должен находиться в папке с именем [Levels](#assets-folder-structure-preview), например `Levels/A4_C17_Parking_Garage.unity` |
+| Scene                         | *         |           | Должен находиться в папке с именем [Levels](#assets-folder-structure-preview), например `_Levels/A4_C17_Parking_Garage.unity` |
 | > Persistent                  |           | _P        |                                  |
 | > Audio                       |           | _Audio    |                                  |
 | > Lighting                    |           | _Lighting |                                  |
 | > Geometry                    |           | _Geo      |                                  |
 | > Gameplay                    |           | _Gameplay |                                  |
-| Script                        |           |           | Должен находиться в папке с именем [Scripts](#assets-folder-structure-preview), например `Scripts/PlayerMovement.cs` |
+| |  |  |  |
+| Script                        |           |           | Должен находиться в папке с именем [Scripts](#assets-folder-structure-preview), например `_Scripts/PlayerMovement.cs` |
+| |  |  |  |
 | 3D-Model                      |           |           |                                  |
 | > Character                   | CH_       |           |                                  |
 | > Vehicle                     | VH_       |           |                                  |
 | > Weapon                      | WP_       |           |                                  |
 | > Static Mesh                 | SM_       |           |                                  |
 | > Skeletal Mesh               | SK_       |           |                                  |
+| |  |  |  |
 | Texture                       | T_        |           |                                  |
 | > Diffuse/Albedo/Base Color   |           | _D        |                                  |
 | > Normal                      |           | _N        |                                  |
@@ -384,9 +386,14 @@ public class PlayerMovement : MonoBehaviour
 | > Emissive                    |           | _E        |                                  |
 | > Mask                        |           | _M        |                                  |
 | > Specular                    |           | _S        |                                  |
+| > UI Sprite                   |           | _GUI      |                                  |
+| |  |  |  |
 | Material                      | M_        |           |                                  |
 | Shader                        | SH_       |           |                                  |
 | Particle System               | PS_       |           |                                  |
+| Audio Clip                    | A_        |           |                                  |
+| Animation Controller	        | AC_       |           |                                  |
+| Dialogue Voice                | DV_       |           |                                  |
 | Render Pipeline               | BRP_/URP_/HDRP_ |     |                                  |
 
 **[Наверх](#table-of-contents)**
